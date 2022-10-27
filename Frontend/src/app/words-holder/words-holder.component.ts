@@ -30,11 +30,6 @@ export class WordsHolderComponent implements OnInit {
   ngOnInit(): void {}
 
   public checkWord(condition: boolean): void {
-    if (this.currentIndex > this.words.length - 2) {
-      this.isOver = true;
-      this.onComplete();
-      return;
-    }
     let timeout: any;
     let currentWord: any = this.currentIndex + 1;
     if (condition) {
@@ -51,7 +46,12 @@ export class WordsHolderComponent implements OnInit {
         clearTimeout(timeout);
       }, 1000);
     }
-
+    if (this.currentIndex > this.words.length - 2) {
+      this.isOver = true;
+      this.onComplete();
+      this.currentIndex++;
+      return;
+    }
     this.currentIndex++;
   }
 
@@ -71,7 +71,11 @@ export class WordsHolderComponent implements OnInit {
   }
 
   onComplete() {
-    this.isOver = true;
-    this.testOver.emit({ ...this.score });
+    let timeout: any;
+    timeout = setTimeout(() => {
+      this.isOver = true;
+      this.testOver.emit({ ...this.score });
+      clearTimeout(timeout);
+    }, 1000);
   }
 }
