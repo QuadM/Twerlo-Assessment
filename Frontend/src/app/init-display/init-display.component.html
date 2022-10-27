@@ -1,0 +1,15 @@
+<div class="inner-card main-card">
+    <div *ngIf="!isInit&&rank" class="inner-card rank-card" > Your Rank is: {{rank}}</div>
+    <div style="display: flex;  flex-direction: row;">
+        <div class="wp" >
+            <span class="word">W</span>
+            <span>{{isInit?"ord":"ell"}} </span>
+        </div>
+        <div class ="wp" >
+            <span class="word">P</span>
+            <span>{{isInit?"ractice":"layed"}} </span>
+        </div>
+    </div>
+    <br><br>
+    <span class="button-span" (click)="onStart()">{{isInit?"Start NOW!":"Start AGAIN!"}}</span>
+</div>

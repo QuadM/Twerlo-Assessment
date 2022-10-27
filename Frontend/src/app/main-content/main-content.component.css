@@ -1,0 +1,100 @@
+:host {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 14px;
+  color: #333;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 8px 0;
+}
+
+p {
+  margin: 0;
+}
+
+a,
+a:visited,
+a:hover {
+  color: #1976d2;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #125699;
+}
+
+.button-span {
+  background: linear-gradient(45deg, #4644ff 0%, #34c7ff 100%);
+  box-shadow: #8888 0 0 5em 0.5em;
+  padding: 0.6em 1em 0.8em;
+  border-radius: 5px;
+  color: white;
+  font-weight: 400;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all ease-in-out 0.2s;
+}
+.button-span:hover {
+  background: #fafafa;
+  color: #34c0f0;
+  border: solid 1px #34c0f0;
+}
+#acknowledge {
+  font-size: 1rem;
+}
+
+#ng-main-content {
+  position: relative;
+  margin: 1em auto;
+  display: flex;
+  overflow: hidden;
+  height: 90vh;
+  width: 98vw;
+  border-radius: 20px;
+  background: rgba(55, 55, 55, 0.1);
+  box-shadow: inset 0 0 5em 12px #aaa5;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 767px) {
+  #ng-main-content {
+    overflow: scroll;
+  }
+  .card-container > *:not(.circle-link),
+  .terminal {
+    width: 100%;
+  }
+
+  .card:not(.highlight-card) {
+    height: 16px;
+    margin: 8px 0;
+  }
+
+  .card.highlight-card span {
+    margin-left: 72px;
+  }
+
+  svg#rocket-smoke {
+    right: 120px;
+    transform: rotate(-5deg);
+  }
+  #acknowledge {
+    font-size: 2vw !important;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  svg#rocket-smoke {
+    display: none;
+    visibility: hidden;
+  }
+}

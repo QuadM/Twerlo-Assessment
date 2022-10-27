@@ -1,0 +1,8 @@
+
+<div style="text-align: center;" >
+    <div id="progress-outter">
+        <div id="progress-inner" [style.width]="((currentValue/maxValue)*100)+'%'" >
+        </div>
+    </div>
+    <div style="font-weight:800; font-family:cursive;">{{isPercent?((currentValue/maxValue)*100).toFixed(2):currentValue}}{{isPercent?"%":isTimer?"s left":""}} </div>
+</div>

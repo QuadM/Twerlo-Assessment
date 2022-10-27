@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+
+.inner-card {
+  background-color: #fff;
+  padding: 5vh 10vw;
+  border-radius: 25px;
+  box-shadow: 0 0 5em 12px #aaa5;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-transform: capitalize;
+}

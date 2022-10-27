@@ -1,0 +1,8 @@
+
+    <div id="ng-main-content">
+      <div style="margin: auto ;">
+        <app-init-display *ngIf="(!isTestOn)&&isInit" (startTest)=" $event==='true'&&isTestOn=true" [isInit]="isInit"></app-init-display>
+        <app-words-holder *ngIf="isTestOn" (testOver)="scoreClaimed($event) ;isInit=false;isTestOn=false;"></app-words-holder>
+        <app-init-display *ngIf="(!isTestOn)&&(!isInit)" [rank]="rank" (startTest)=" $event==='true'&&isTestOn=true" [isInit]="isInit"></app-init-display>
+      </div>
+    </div>

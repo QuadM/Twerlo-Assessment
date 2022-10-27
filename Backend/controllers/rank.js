@@ -6,7 +6,9 @@ module.exports = {
       if (req.body && req.body !== {}) {
         const clientScore = req.body.clientScore;
         const scoresList = require("../TestData (2)[2839].json")["scoresList"];
-        const clientRank = calculateRank(scoresList, clientScore);
+        const clientRank = {
+          clientRank: calculateRank(scoresList, clientScore),
+        };
         res.status(200).json(clientRank);
       } else res.sendStatus(500);
     } catch (err) {

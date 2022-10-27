@@ -21,9 +21,11 @@ class Words {
     adjective: "65tfgh9ihghji87rfgo98ytg6t7t7ytgh",
   };
 
-  // Returns hashed _word_list
+  // Returns hashed _word_list xxxxxx
+  // Returns _word_list
   get word_list() {
-    return this.listHashAdaptor(this._word_list, this.posHashMapping, "pos");
+    // return this.listHashAdaptor(this._word_list, this.posHashMapping, "pos");
+    return this._word_list;
   }
   set word_list(list) {
     this._word_list = [...list];
@@ -64,16 +66,17 @@ class Words {
     let listClone = this.word_list.map((e) => ({ ...e })); //Clone list original not to be changed accidentally
 
     if (isStrict) {
-      const poses = [
-        "65tfg876ghji87rfgo98ytg6tgh87ytgh",
-        "65tfg87tghuytgyh9o98ytg6tgh87ytgh",
-        "65tfg6tgh87ytgh76tfvbijgfdxc7ytgh",
-        "65tfgh9ihghji87rfgo98ytg6t7t7ytgh",
-      ];
+      // const hashedPoses = [
+      //   "65tfg876ghji87rfgo98ytg6tgh87ytgh",
+      //   "65tfg87tghuytgyh9o98ytg6tgh87ytgh",
+      //   "65tfg6tgh87ytgh76tfvbijgfdxc7ytgh",
+      //   "65tfgh9ihghji87rfgo98ytg6t7t7ytgh",
+      // ];
+      const poses = ["verb", "adverb", "noun", "adjective"];
 
       //categorizing the words [[verb...],[nous...],...] depending on poses
       const categorized = poses.map((pos) =>
-        listClone.filter((e) => e["pos"] === pos)
+        listClone.filter((e) => e["pos"] === pos),
       );
 
       let categorizedIterator = 0; // used to iterate once over each category
@@ -92,17 +95,17 @@ class Words {
         if (categorized[categorizedIterator % poses.length].length === 0) {
           console.error(
             " No enough words exist -- unsuitable sample length -- returning less or no words :\n",
-            result
+            result,
           );
           break;
         }
         result.push(
           categorized[categorizedIterator % poses.length].splice(
             pickRandomIndex(
-              categorized[categorizedIterator % poses.length].length
+              categorized[categorizedIterator % poses.length].length,
             ),
-            1
-          )[0]
+            1,
+          )[0],
         );
         categorizedIterator++;
       }
@@ -113,7 +116,7 @@ class Words {
         if (listClone.length === 0) {
           console.error(
             " No enough words exist -- returning less or no words :\n",
-            result
+            result,
           );
           break;
         }

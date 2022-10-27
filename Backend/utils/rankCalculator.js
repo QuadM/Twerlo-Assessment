@@ -13,4 +13,4 @@ function calculateRank(scoreList, score) {
   return rank;
 }
 
-export { calculateRank };
+module.exports = { calculateRank };

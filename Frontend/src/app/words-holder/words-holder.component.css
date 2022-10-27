@@ -1,0 +1,73 @@
+.pos-button {
+  background: #4644ff;
+  border: solid 1px #4644ff;
+  cursor: pointer;
+  padding: 2vh 5% 2.2vh;
+  border-radius: 0.5em;
+  margin: auto;
+  color: white;
+  transition: all ease-in-out 0.2s;
+  user-select: none;
+}
+
+.pos-buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 40vw;
+  margin: 1em auto;
+}
+
+.pos-buttons :nth-child(1) {
+  background: #4644ff;
+  border: solid 1px #4644ff;
+}
+.pos-buttons :nth-child(2) {
+  background: #4074ff;
+  border: solid 1px #4074ff;
+}
+
+.pos-buttons :nth-child(3) {
+  background: #3497ff;
+  border: solid 1px #3497ff;
+}
+
+.pos-buttons :nth-child(4) {
+  background: #34c7ff;
+  border: solid 1px #34c0f0;
+}
+.pos-button:hover {
+  background: #fafafa !important;
+  color: #34c0f0;
+}
+.answer {
+  font-weight: 700;
+  font-size: large;
+}
+.inner-card.answer {
+  padding: 2vh !important;
+  margin: auto;
+  min-width: 50% !important;
+}
+
+.right-answer {
+  background: linear-gradient(45deg, #44ff44 0%, #00ff95 100%);
+}
+.wrong-answer {
+  background: linear-gradient(45deg, #ff7f44 100%, #ff0000 0%);
+}
+
+@media screen and (max-width: 767px) {
+  .pos-buttons {
+    flex-direction: column;
+  }
+  .pos-button {
+    margin: 1vw;
+    text-align: center;
+    min-width: 20vw;
+  }
+  .inner-card {
+    margin: 1vw auto;
+    padding: 1vw 20vw;
+  }
+}

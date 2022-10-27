@@ -5,7 +5,7 @@ module.exports = {
   getRandomStrictRandomWords: async (req, res) => {
     try {
       let wordsList = new Words(
-        require("../TestData (2)[2839].json")["wordList"]
+        require("../TestData (2)[2839].json")["wordList"],
       );
       wordsList = wordsList.pickRandomSample(10, true);
       res.status(200).json(wordsList);

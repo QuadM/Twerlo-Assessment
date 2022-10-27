@@ -1,0 +1,19 @@
+.word {
+  text-transform: capitalize;
+  font-family: cursive;
+  font-size: 6vw;
+  margin: 1vw auto;
+  user-select: none;
+}
+
+.inner-card {
+  box-shadow: 0 0 5em 12px #aaa2;
+  margin: 1em;
+  padding: 3vh 6vw;
+}
+
+@media screen and (max-width: 767px) {
+  .inner-card {
+    padding: 2vh 8vw;
+  }
+}

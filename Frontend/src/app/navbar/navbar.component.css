@@ -1,0 +1,78 @@
+#instructions {
+  opacity: 0;
+  z-index: -1;
+  background: #fffc;
+  box-shadow: #8885 0 0 5em 0.5em;
+  position: absolute;
+  top: 5vh;
+  right: 5vw;
+  max-width: 20em;
+  border-radius: 15px;
+  padding: 2vh 2vw 2.2vh;
+  transition: all ease-in-out 0.2s;
+  font-size: larger;
+}
+.button-span {
+  background: linear-gradient(45deg, #4644ff 0%, #34c7ff 100%);
+  box-shadow: #8888 0 0 5em 0.5em;
+  padding: 0.6em 1em 0.8em;
+  border-radius: 5px;
+  color: white;
+  font-weight: 400;
+  text-transform: uppercase;
+  cursor: default;
+  transition: all ease-in-out 0.2s;
+}
+.button-span:hover {
+  background: #fafafa;
+  color: #34c0f0;
+  border: solid 1px #34c0f0;
+}
+.button-span:hover + #instructions {
+  opacity: 1;
+  z-index: 5;
+}
+#instructions:hover {
+  opacity: 1;
+  z-index: 5;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.toolbar {
+  margin: 1vw 3vw 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5em !important;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+
+.toolbar img {
+  margin: 0 16px;
+}
+
+.toolbar #twitter-logo {
+  height: 40px;
+  margin: 0 8px;
+}
+
+.toolbar #youtube-logo {
+  height: 40px;
+  margin: 0 16px;
+}
+
+.toolbar #twitter-logo:hover,
+.toolbar #youtube-logo:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 767px) {
+  #acknowledge {
+    font-size: 2vw !important;
+  }
+}

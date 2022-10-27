@@ -1,0 +1,63 @@
+.word {
+  text-transform: capitalize;
+  font-family: cursive;
+  font-size: 6vw;
+  margin: 1vw auto 0;
+  user-select: none;
+}
+
+.inner-card {
+  text-transform: none;
+  background: linear-gradient(45deg, #4644ff 0%, #34c7ff 100%);
+  color: white;
+  font-weight: 600;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rank-card {
+  font-size: 2vw;
+  background: #fff;
+  box-shadow: inset #8888 0 0 1em 0.5em;
+  color: black;
+}
+
+.button-span {
+  background: linear-gradient(45deg, #34c7ff 0%, #4644ff 100%);
+  box-shadow: #fff 0 0 2em 0.5em;
+  padding: 0.6em 1em 0.8em;
+  border-radius: 5px;
+  color: white;
+  font-weight: 800;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: solid 1px #34c0f0;
+  transition: all ease-in-out 0.2s;
+}
+.button-span:hover {
+  background: #fafafa;
+  color: #34c0f0;
+  border: solid 1px #34c0f0;
+}
+
+.wp {
+  margin: 2vw;
+  text-align: center;
+  font-size: 4vw;
+}
+
+@media screen and (max-width: 767px) {
+  .word {
+    font-size: 9vw;
+  }
+  .wp {
+    font-size: 5vw;
+  }
+  .inner-card {
+    min-width: 70vw;
+  }
+  .inner-card .rank-card {
+    min-width: 70%;
+    font-size: 5vw;
+  }
+}

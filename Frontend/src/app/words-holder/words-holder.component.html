@@ -1,0 +1,30 @@
+<div class="inner-card">
+    
+    <app-progress-bar [maxValue]="words.length-1" [currentValue]="currentIndex" [isPercent]="true"></app-progress-bar>
+
+    <p style="text-align:center;font-weight:500">Choose the type of that word</p>
+    <br>
+
+    <div  style="padding:3vw;" [classList]="'inner-card answer '+currentClass">
+        {{currentClass===" "?".":currentClass==="wrong-answer"?"wrong":"right"}}
+    </div>
+        
+    <app-word-card [word]="words[currentIndex]" ></app-word-card>
+    
+    <div class="pos-buttons">
+        <span *ngFor="let pos of poses" class="pos-button" (click)="checkWord(pos===words[currentIndex].pos)" >
+            {{pos}}
+        </span>
+    </div>
+    
+    <br>
+    
+    <div class="pos-buttons">
+        <span  class="pos-button" (click)="skip()">
+            skip
+        </span>
+    </div>   
+    
+    <app-progress-bar [maxValue]="50" [isTimer]="true" [isOver]="isOver" (timeover)="$event==='true'&&onComplete()" ></app-progress-bar>
+
+</div>

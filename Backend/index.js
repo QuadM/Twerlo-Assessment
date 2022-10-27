@@ -5,6 +5,7 @@ const app = express();
 
 //enable cors
 app.use(cors());
+app.use(express.json());
 
 // Morgen middleware for logging the requests
 app.use(morgan(":method :url :status "));
