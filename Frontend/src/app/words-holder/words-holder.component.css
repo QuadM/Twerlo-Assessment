@@ -41,6 +41,7 @@
   color: #34c0f0;
 }
 .answer {
+  visibility: hidden;
   font-weight: 700;
   font-size: large;
 }
@@ -51,9 +52,11 @@
 }
 
 .right-answer {
+  visibility: visible;
   background: linear-gradient(45deg, #44ff44 0%, #00ff95 100%);
 }
 .wrong-answer {
+  visibility: visible;
   background: linear-gradient(45deg, #ff7f44 100%, #ff0000 0%);
 }
 
