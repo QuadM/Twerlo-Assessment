@@ -22,7 +22,7 @@ export interface ScoreI {
 
 @Injectable()
 export class WordsService {
-  APIURL: string = 'http://localhost:4000/api';
+  APIURL: string = process.env['NODE_ENV'] === 'PRODUCTION'? 'https://quadm-twerlo-assessment.herokuapp.com/api' : 'http://localhost:4000/api';
   constructor(private http: HttpClient) {}
   httpOptions = {
     headers: new HttpHeaders({
