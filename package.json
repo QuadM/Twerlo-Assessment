@@ -1,0 +1,22 @@
+{
+  "name": "assessment",
+  "version": "1.0.0",
+  "description": "![Twerlo Logo](https://twerlo.com/wp-content/uploads/elementor/thumbs/Twerlo-Logo-pfs3vf8npcslzwf36w7aw5zf3r4zv4616dhjhk8bde.png)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cd Backend && npm i && cd ./../Frontend && npm i && ng build",
+    "start": "concurrently \"npx nodemon index.js\" \"cd ../frontend && ng serve\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QuadM/Twerlo-Assessment.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/QuadM/Twerlo-Assessment/issues"
+  },
+  "homepage": "https://github.com/QuadM/Twerlo-Assessment#readme"
+}
