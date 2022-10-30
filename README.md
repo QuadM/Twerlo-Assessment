@@ -19,10 +19,13 @@ Make sure to have [Node.js](https://nodejs.org/en/download/) installed on your m
 
 3. Run `$ cd backend && npm run dev-start` in the root `./twerlo-assessment`.
 
-
 ## Usage
 
 1. Run `$ cd backend && npm run dev-start` to start serving the app (back&front) in the root `./twerlo-assessment` , then go to `http://localhost:4200` and enjoy the web app ♥.
+
+###OR
+2. Run `$docker-compose up`  , then go to `http://localhost:4200` and enjoy the web app ♥.
+
 
 ## Structure
 
