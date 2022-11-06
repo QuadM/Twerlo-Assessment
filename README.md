@@ -15,9 +15,9 @@ Make sure to have [Node.js](https://nodejs.org/en/download/) installed on your m
 
 1. Clone this repo `$ git clone git@github.com:QuadM/Twerlo-Assessment.git` or using `ssh`.
 
-2. Run `$ npm install` to install dependencies and packages in both `./backend` & `./frontend`.
+2. Run `$ npm install` then `$ npm run build` to install dependencies and packages in both `./backend` & `./frontend`.
 
-3. Run `$ cd backend && npm run dev-start` in the root `./twerlo-assessment`.
+3. Run `$ npm start` in the root `./twerlo-assessment`.
 
 ## Usage
 
