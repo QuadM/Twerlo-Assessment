@@ -2,7 +2,7 @@
 ## By Mahmoud Hafez
 
 ![Twerlo Logo](https://twerlo.com/wp-content/uploads/elementor/thumbs/Twerlo-Logo-pfs3vf8npcslzwf36w7aw5zf3r4zv4616dhjhk8bde.png)
-### Deployeed Demo:
+### Deployed Demo:
 [quadm-twerlo-assessment](https://quadm-twerlo-assessment.netlify.app/)
 ## Table of contents
 
