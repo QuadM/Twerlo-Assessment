@@ -6,8 +6,8 @@
 [quadm-twerlo-assessment](https://quadm-twerlo-assessment.netlify.app/)
 ## Table of contents
 
-1. [Installation](#install)
-2. [Usage](#use)
+1. [Installation](#Installation)
+2. [Usage](#Usage)
 3. [Structure](#structure)
 
 ## Installation
