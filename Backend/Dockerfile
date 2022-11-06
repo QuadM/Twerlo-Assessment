@@ -4,7 +4,6 @@ COPY . /backend-express
 
 WORKDIR /backend-express
 RUN npm i
-EXPOSE 8080
-ENV PORT=8080
+EXPOSE 4000
 
 CMD ["node","index.js"]

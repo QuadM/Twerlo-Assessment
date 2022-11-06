@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "cd Backend && npm i && cd ./../Frontend && npm i && ng build",
-    "start": "concurrently \"cd ./backend && npx nodemon index.js\" \"cd ./frontend && ng serve\""
+    "build": "cd Backend && npm i && cd ../Frontend && npm i && ng build",
+    "start": "concurrently \"cd backend && npx nodemon index.js\" \"cd frontend && ng serve\""
   },
   "repository": {
     "type": "git",
@@ -18,8 +18,5 @@
   "bugs": {
     "url": "https://github.com/QuadM/Twerlo-Assessment/issues"
   },
-  "homepage": "https://github.com/QuadM/Twerlo-Assessment#readme",
-  "dependencies": {
-    "concurrently": "^7.5.0"
-  }
+  "homepage": "https://github.com/QuadM/Twerlo-Assessment#readme"
 }

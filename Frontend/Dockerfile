@@ -6,7 +6,7 @@ COPY package.json .
 RUN npm install
 RUN npm install http-server
 COPY . .
-ENV NODE_ENV=PRODUCTION
-EXPOSE 80
+
+EXPOSE 4200
 
 CMD ["npm","start"]

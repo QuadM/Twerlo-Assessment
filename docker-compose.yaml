@@ -9,6 +9,6 @@ services:
     build: ./frontend
     container_name: frontend_C
     ports:
-      - '80:80'
+      - '4200:4200'
     stdin_open: true
     tty: true
